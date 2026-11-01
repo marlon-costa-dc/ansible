@@ -1,0 +1,2 @@
+bugfixes:
+  - lookup plugins - Declare the list return type of ``LookupBase.run`` so type checkers accept plugin implementations returning lists.

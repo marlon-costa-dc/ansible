@@ -89,7 +89,7 @@ class LookupBase(AnsiblePlugin):
         return ret
 
     @abstractmethod
-    def run(self, terms, variables, **kwargs):
+    def run(self, terms, variables, **kwargs) -> list[t.Any]:
         """
         When the playbook specifies a lookup, this method is run.  The
         arguments to the lookup become the arguments to this method.  One
